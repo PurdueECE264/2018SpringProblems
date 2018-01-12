@@ -6,6 +6,10 @@
 *.ko
 *.obj
 *.elf
+# adding object files that will be needed by students for HW02
+!HW02/obj/kmean.o
+!HW02/obj/mem_mgmt.o
+#
 
 # Linker output
 *.ilk
