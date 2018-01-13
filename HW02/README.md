@@ -208,6 +208,36 @@ To test your code. You have to first compile it and the run the following comman
 3. 6 - this is the value of `K`, this should be same as what used which generating test1.txt file
 4. output1.txt - this is the name of the file in which output of your algorithm will be written. This will contain the centroids found by the algorithm. You can give any name to it.
 
+Submitting Your code
+--------
+**This is a programming assignment, so you would have to submit the code on Blackboard**
+
+You have to submit the following file in a zip folder on the blackboard:
+* pe02.c - this file should have with `distance2` and `closestCentroid` function completed.  
+
+The **only** way to submit homework is through Blackboard.
+
+The instructor will **never** accept any requestion for exception "*my
+submission is only one minute late*".  It is your responsibility to
+meet the deadline.  You are strongly encouraged to submit at least ten
+minutes before the deadline because submission may take time.
+
+If there is a campus-wide problem (such as network outage or the
+Blackboard server is down), the deadline will be extended for the
+entire class. If the problem is specific to yourself (for example,
+your computer crashes), the deadline will not be extended for
+you.
+
+**DO NOT** send your code by email. Your code will not be graded
+  if it is sent by email.
+
+The teaching staff is strictly prohibited to look at files on your
+computer (or your Purdue account) for grading. Thus, **NEVER** say "I
+finished before the deadline but I forgot to submit".  **NEVER** say "I have
+not made any change after the submission deadline." because the
+teaching staff is not allowed to look at your files that have not been
+submitted through Blackboard.
+
 
 
 Grading
