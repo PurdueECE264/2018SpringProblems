@@ -1,5 +1,5 @@
 ## Test Generator for HW02/HW03
-This is test generator that we have created for HW02 and HW03.
+This is the test generator that we have created for HW02 and HW03.
 
 Please find the following files along with this README in this folder:
 * `testgen.c` - this is the main file for generating the test case. Please read below regarding the flow for testgen file
@@ -9,14 +9,15 @@ Please find the following files along with this README in this folder:
 Flow of Testgen
 ================
 
-You can also see the code and the comments inside the code. The file `testgen.c` has lot of comments to help you understand the code
+You can also see the code and the comments inside the code in `testgen.c` file. The file `testgen.c` have lots of comments to help you understand the code
+
 General flow of the testgen file is similar to what we gave you in HW02 to generate your own test case. The flow of the code is as follows:
 
-1. Expected centroids is in some range given as input, let's say if input is 100, then range is between [-100,100]
-2. The number of centroids you want for k-mean algorithm is also an input, let that input be 3, 
+1. It first generates the centroids is in some range, where range is given as an input, let's say if input is 100, then range is between [-100,100]
+2. The number of centroids you want for k-mean algorithm is also an input
 3. Dimension is also taken as input
 4. Number of points to generate is also taken as input
-5. The code then split the range selected into k centroids eg. for 3 centroids evenly distrubed in the range eg.((-33.33, -33.33), (33.33, 33.33) , (100, 100))
+5. The code then splits the range into `k` centroids eg. for 3 centroids evenly distrubed in the range [-100,100] will be ((-33.33, -33.33), (33.33, 33.33) , (100, 100))
 6. It then generates random points around those centroids. To do this it follows the following procedure:
 	* First generates a random number between 0 & 1
 	* It then subtracts 0.5 from the above number, thus the range of the random number will now be between [-0.5, 0.5]
