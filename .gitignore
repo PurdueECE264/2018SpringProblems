@@ -9,7 +9,11 @@
 # adding object files that will be needed by students for HW02
 !HW02/obj/kmean.o
 !HW02/obj/mem_mgmt.o
-#
+
+# adding object files that will be needed by students for HW02
+!HW03/obj/closest_centroid.o
+!HW03/obj/dist2.o
+
 
 # Linker output
 *.ilk
