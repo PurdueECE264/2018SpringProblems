@@ -17,12 +17,12 @@ General flow of the testgen file is similar to what we gave you in HW02 to gener
 2. The number of centroids you want for k-mean algorithm is also an input
 3. Dimension is also taken as input
 4. Number of points to generate is also taken as input
-5. The code then splits the range into `k` centroids eg. for 3 centroids evenly distrubed in the range [-100,100] will be ((-33.33, -33.33), (33.33, 33.33) , (100, 100))
+5. The code then splits the range into `k` centroids eg. for 3 centroids evenly distrubed in the range [-100,100] will be ((-50.0, -50.0), (0.0,0.0) , (50, 50))
 6. It then generates random points around those centroids. To do this it follows the following procedure:
 	* First generates a random number between 0 & 1
 	* It then subtracts 0.5 from the above number, thus the range of the random number will now be between [-0.5, 0.5]
 	* It multiply this random number with range/(k+1) eg. in above case it will be 100/(3+1)
-	* The code then randomly chooses the centroid and add the above number to that centroid eg. (-33.3 + random * range/(k+1), -33.3 + random * range/(k+1))
+	* The code then randomly chooses the centroid and add the above number to that centroid eg. (-50.0 + random * range/(k+1), -50.0 + random * range/(k+1))
   * It generates as many number of points as given as the input
 
 
