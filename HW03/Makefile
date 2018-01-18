@@ -17,27 +17,27 @@ testcase: test1 test2 test3 test4 test5
 
 test1: pa03
 	./pa03 test1.txt 2 tmp.txt
-	sort tmp.txt > output1.txt
+	sort -n tmp.txt > output1.txt
 	diff output1.txt expected1.txt
 
 test2: pa03
 	./pa03 test2.txt 3 tmp.txt
-	sort tmp.txt > output2.txt
+	sort -n tmp.txt > output2.txt
 	diff output2.txt expected2.txt
 
 test3: pa03
 	./pa03 test3.txt 3 tmp.txt
-	sort tmp.txt > output3.txt
+	sort -n tmp.txt > output3.txt
 	diff output3.txt expected3.txt
 
 test4: pa03
 	./pa03 test4.txt 4 tmp.txt
-	sort tmp.txt > output4.txt
+	sort -n tmp.txt > output4.txt
 	diff output4.txt expected4.txt
 
 test5: pa03
 	./pa03 test5.txt 6 tmp.txt
-	sort tmp.txt > output5.txt
+	sort -n tmp.txt > output5.txt
 	diff output5.txt expected5.txt
 	rm tmp.txt
 
