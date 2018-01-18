@@ -44,6 +44,11 @@ This is the last part of your assignment for the K-means algorithm. In this part
 three functions - `kmeans`, `allocateMemory` & `releaseMemory`. 
 All these functions needs to be implemented in `pa03.c` file. Skeletons of these functions are given to you in the pa03.c file.
 
+Note:
+
+**Please use the initialized centroids value only, do not initialize the centroids yourself.**
+
+
 Following are the fuctions that you have to complete:
 
 1. `kmean` - This function is the main function as it implements the algorithm for K-means. This function accepts the following arguments : 
