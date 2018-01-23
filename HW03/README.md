@@ -110,6 +110,8 @@ may depend on the order of calculation.  You need to think carefully
 about whether your program is correct if the results are different
 from the sample outputs given by the teaching staff
 
+Use "no point moves to another group" as the convergence condition. The groups are integers and have no problem of precision. Do not use "centroids do not change locations" as the convergence condition. Why? The locations are floating point numbers and have finite precisions.
+
 
 Submitting Your code
 --------
