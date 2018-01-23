@@ -13,7 +13,7 @@ pa03:$(OBJS)
 .c.o:
 	$(GCC) $(FLAGS) -c $*.c
 
-testcase: test1 test2 test3 test4 test5
+testcase: test1 test2 test3 test4 test5 test6
 
 test1: pa03
 	./pa03 test1.txt 2 tmp.txt
