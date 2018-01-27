@@ -50,7 +50,7 @@ Student * SearchByName(StudentDatabase * studb, char * name) {
 	return NULL;
 }
 #endif
-
+/* Warning: Do not modify or delete codes below this line. */
 /* This function prints info of a student. */
 void PrintStudent(Student * stu) {
 	printf("ID:%d, Name:%s, Major:%s, Enrollment:%s, Year:%s, Age:%d\n",
