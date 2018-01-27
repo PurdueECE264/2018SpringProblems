@@ -134,3 +134,5 @@ This exercise will be graded as folows:
 4. `SeachByName()` function: whether your function meets the specification as described above. 
 5. `argc` and `argv`: whether the main function meets the specifications as described above.
 6.  Code that contains memory problems reportable by Valgrind will be subject to a penalty of 40% of the total possible points.
+
+<strong>Do not print anything other than the required output (i.e., no debugging output, etc.).</strong>
