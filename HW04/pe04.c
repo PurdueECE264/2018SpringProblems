@@ -18,6 +18,7 @@
 			fopen(), fclose(), fgetc(), fscanf(), feof().
 		You can use fseek(fptr, 0, SEEK_SET) to go to the beginning of a file. 
 	3. You should return a pointer to StudentDatabase object.
+	4. If you fail to connect to the database, you should return NULL.
 */
 StudentDatabase * Connect(char * filename) {
 	StudentDatbase * db = NULL;

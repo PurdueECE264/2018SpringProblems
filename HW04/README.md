@@ -28,6 +28,7 @@ In this exercise, you have to complete three functions - `Connect()`, `Close()`,
 	1. filename: the filename of the database you are going to connect.
 	2. You may want to use: `fopen()`, `fclose()`, `fscanf()`, `feof()` to read the file content.
 	3. This function returns a pointer to `StudentDatabase` object. 
+	4. If you fail to connect to the database, you should return NULL.
 2. `Close()` - This function releases the memory you allocated in `Connect()` and close the database. Not completing this function will lead to memory leak. This function has one argument:
 	1. studb: the pointer to `StudentDatabase` object of which the memory needs to be freed.   
 3. `SearchByName()` - This function searches the student by name in database. It accepts two arguments:
