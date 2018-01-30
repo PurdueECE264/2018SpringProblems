@@ -21,7 +21,7 @@
 	4. If you fail to connect to the database, you should return NULL.
 */
 StudentDatabase * Connect(char * filename) {
-	StudentDatbase * db = NULL;
+	StudentDatabase * db = NULL;
 
 	return db;
 }
