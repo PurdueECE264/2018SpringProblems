@@ -1,0 +1,2 @@
+Fail to open a file
+Fail to write to db

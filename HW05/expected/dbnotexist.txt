@@ -1,0 +1,1 @@
+Fail to connect to db
