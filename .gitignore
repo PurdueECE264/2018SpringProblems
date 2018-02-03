@@ -15,6 +15,10 @@
 !HW03/obj/dist2.o
 
 
+# adding object files that will be needed by students for HW05
+!HW05/obj/pe04.o
+
+
 # Linker output
 *.ilk
 *.map
