@@ -99,11 +99,15 @@ Note that you should use other input arguments to extensively test your function
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
-
-You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
+You have to submit the following files in a <strong>zip</strong> folder on the blackboard:
 * `pe05.c` - This file should have `CompareByName()`, `SortDatabaseByName()`, `CompareByAge()`, `SortDataBaseByAge()`, `WriteDatabase()` functions completed.
 * `main.c` - This file should have `main()` function completed.
-<strong>You will not get any credits if the submitted file is not zipped</strong>
+Type the following command to zip your file.
+```bash
+	zip pe05.c main.c pe05.zip
+```
+Submit <strong>pe05.zip</strong> to blackboard. 
+<strong>You will not get any credits if you do not follow the submission instructions </strong>
 
 The **only** way to submit homework is through Blackboard.
 
