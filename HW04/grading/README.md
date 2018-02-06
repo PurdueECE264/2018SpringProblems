@@ -26,7 +26,7 @@ If there are memory errors, your Close() function fail. <br>
 4. Search() function (10 points). Use your Search() function and run the following commands. 
 ```bash
 	NAMES = Azeriah Remick Ken Ezreal Aarvi Nataley Tai Joe Apple Daeson
-    for n in $(NAMES); do ./pe04 $(FILE) -s $$n; done &> student_search.txt
+    	for n in $(NAMES); do ./pe04 $(FILE) -s $$n; done &> student_search.txt
 	diff -i -w student_search.txt expected_search.txt
 ```
 If the output is different, you fail this test.<br>
