@@ -10,18 +10,18 @@ For example, if we are testing `Connect()` function. We call your Connect() and 
 	./pe04 database.txt -a > student_struct.txt
 	diff -i -w expected_struct.txt student_structure.txt
 ```
-If the output is different, you fail this test.
+If the output is different, you fail this test.<br>
 2. Connect() function (60 points).  Use your Connect() function and run the following commands.
 ```bash
 	./pe04 database.txt -a > student_con.txt
 	diff -i -w expected_con.txt student_connect.txt
 ```
-If the output is different, you fail this test.
+If the output is different, you fail this test.<br>
 3. Close() function (15 points).  Use your Close() function and run the following commands. 
 ```bash
 	valgrind --log-file=student_close.txt ./pe04 database.txt -a
 ```
-If there are memory errors, your Close() function fail. 
+If there are memory errors, your Close() function fail. <br>
 
 4. Search() function (10 points). Use your Search() function and run the following commands. 
 ```bash
@@ -29,7 +29,7 @@ If there are memory errors, your Close() function fail.
     for n in $(NAMES); do ./pe04 $(FILE) -s $$n; done &> student_search.txt
 	diff -i -w student_search.txt expected_search.txt
 ```
-If the output is different, you fail this test.
+If the output is different, you fail this test.<br>
 5. argc, argv (10 points)
 ```bash
 	./pe04 &>> student_argc.txt
@@ -37,7 +37,7 @@ If the output is different, you fail this test.
 	./pe04 database.txt -k &>> student_argc.txt
 	diff -i -w expected_argc.txt student_argc.txt
 ```
-If the output is different, you fail this test.
+If the output is different, you fail this test.<br>
 
 6. Memory check.
 ```bash
