@@ -65,7 +65,7 @@ Following are the files we provide:
 	3. dbnotexist.txt - ./pe05 blablabla -n dbnotexist.txt
 	4. notaorn.txt - ./pe05 database.txt -k notaorn.txt
 	5. argcnot4.txt - ./pe05 database.txt
-	6. filefail.txt - ./pe05 database.txt -a file.txt
+	6. filefail.txt - ./pe05 database.txt -a file.txt <br>
 		To test this you can create "file.txt" first and make it not writable by typing "chmod 444 file.txt" to change the file permission. 
 	7. We will run valgrind for each command and check whether your code has memory issues. 
 	
@@ -104,7 +104,7 @@ You have to submit the following files in a <strong>zip</strong> folder on the b
 * `main.c` - This file should have `main()` function completed.
 Type the following command to zip your file.
 ```bash
-	zip pe05.c main.c pe05.zip
+	zip pe05.zip pe05.c main.c
 ```
 Submit <strong>pe05.zip</strong> to blackboard. 
 <strong>You will not get any credits if you do not follow the submission instructions </strong>
