@@ -1,0 +1,10 @@
+No this student
+ID:198, Name:Remick, Major:ECE, Enrollment:No, Year:Senior, Age:21
+No this student
+No this student
+No this student
+ID:15, Name:Nataley, Major:CS, Enrollment:Yes, Year:Senior, Age:22
+ID:195, Name:Tai, Major:ME, Enrollment:Yes, Year:Freshman, Age:21
+No this student
+No this student
+ID:189, Name:Daeson, Major:BME, Enrollment:No, Year:Senior, Age:18
