@@ -60,8 +60,8 @@ Following are the files we provide:
 4. `database.txt` - This is the database file which stores all student's info.
 5. `obj/pe04.o` - This object stores the definition of functions in previous homework, you should include this file when using gcc to compile your code. Otherwise, you can not use the `Connect()` and `Close()` functions from previous homework.
 6. expected/ - This directroy contains expected output of the following commands. 
-	1. sortbyage.txt - ./pe05 database.txt -a sortbyage.txt. You will create a file named sortbyage.txt with database info sorted by age. 
-	2. sortbyname.txt - ./pe05 database.txt -n sortbyname.txt. You will create a file named sortbyname.txt with database info sorted by name.
+	1. sortbyage.txt - ./pe05 database.txt -a sortbyage.txt. You will print "Write to db\n" or "to screen and create a file named sortbyage.txt with database info sorted by age.
+	2. sortbyname.txt - ./pe05 database.txt -n sortbyname.txt. You will print "Write to db\n" to screen and create a file named sortbyname.txt with database info sorted by name.
 	3. dbnotexist.txt - ./pe05 blablabla -n dbnotexist.txt. You will print "Fail to open database.\n Fail to connect to db.\n" to screen and no file will be created.
 	4. notaorn.txt - ./pe05 database.txt -k notaorn.txt. You will print "Wrong arguments\n" to screen and no file will be created.
 	5. argcnot4.txt - ./pe05 database.txt. You will print "Wrong arguments\n" to screen and no file will be created.
@@ -101,7 +101,7 @@ Note that you should use other input arguments to extensively test your function
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
 You have to submit the following files in a <strong>zip</strong> folder on the blackboard:
 * `pe05.c` - This file should have `CompareByName()`, `SortDatabaseByName()`, `CompareByAge()`, `SortDataBaseByAge()`, `WriteDatabase()` functions completed.
-* `main.c` - This file should have `main()` function completed.
+* `main.c` - This file should have `main()` function completed.<br>
 Type the following command to zip your file.
 ```bash
 	zip pe05.zip pe05.c main.c
