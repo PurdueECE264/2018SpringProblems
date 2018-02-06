@@ -88,11 +88,11 @@ Sort the database by name in descending order and write it to a file.
 # Checking for memory errors
 You should also run./pe05 with arguments under valgrind. To do that, you have to use, for example, the following command:
 ```
-valgrind --log-file=memcheck.log ./pe05 database.txt -a filename
+valgrind --log-file=memcheck.log -tool=memcheck --leak-check=yes --verbose ./pe05 database.txt -a filename
 ```
 and
 ```
-valgrind --log-file=memcheck.log ./pe05 database.txt -n filename
+valgrind --log-file=memcheck.log -tool=memcheck --leak-check=yes --verbose ./pe05 database.txt -n filename
 ```
 Note that you should use other input arguments to extensively test your function. If you follow the instructions and keep the malloc and free functions in the right place, you should not have memory problems in this assignment.
 
