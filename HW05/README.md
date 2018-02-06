@@ -43,10 +43,10 @@ In this exercise, you have to complete six functions - `CompareByName()`, `SortD
 	5. See expected/sortbyage.txt or expected/sortbyname.txt for the format you have to use in `fprintf()`.
 4. `main()` - In this exercise, you will learn to use `argc` and `argv`. Here are the specifications.
 	1. argc: If argc is not 4, you should return `EXIT_FAILURE` and print "Wrong arguments\n".
-	2. argv[1]: name of the input file. i.e., database.txt
+	2. argv[1]: name of the database. i.e., database.txt.
 	3. argv[2]: should be either "-a", or "-n".
-		When argv[2] is "-a", you should sort the database by age in ascending order and print the database and return `EXIT_SUCCESS`.
-		When argv[2] is "-n", you should sort the database by name in descending order and print the dataabse and return `EXIT_SUCCESS`. 
+		When argv[2] is "-a", you should sort the database by age in ascending order and write the database to a file and return `EXIT_SUCCESS`.
+		When argv[2] is "-n", you should sort the database by name in descending order and write the dataabse to a file and return `EXIT_SUCCESS`. 
 		For example, Student "Allen" should come after "Bob".
 	  	If argv[2] is neither "-a" nor "-s", you should print "Wrong arguments\n" and return `EXIT_FAILURE`.
 	4. argv[3]: This is the output filename. You should write the output of database into this file.
@@ -60,12 +60,12 @@ Following are the files we provide:
 4. `database.txt` - This is the database file which stores all student's info.
 5. `obj/pe04.o` - This object stores the definition of functions in previous homework, you should include this file when using gcc to compile your code. Otherwise, you can not use the `Connect()` and `Close()` functions from previous homework.
 6. expected/ - This directroy contains expected output of the following commands. 
-	1. sortbyage.txt - ./pe05 database.txt -a sortbyage.txt
-	2. sortbyname.txt - ./pe05 database.txt -n sortbyname.txt
-	3. dbnotexist.txt - ./pe05 blablabla -n dbnotexist.txt
-	4. notaorn.txt - ./pe05 database.txt -k notaorn.txt
-	5. argcnot4.txt - ./pe05 database.txt
-	6. filefail.txt - ./pe05 database.txt -a file.txt <br>
+	1. sortbyage.txt - ./pe05 database.txt -a sortbyage.txt. You will create a file named sortbyage.txt with database info sorted by age. 
+	2. sortbyname.txt - ./pe05 database.txt -n sortbyname.txt. You will create a file named sortbyname.txt with database info sorted by name.
+	3. dbnotexist.txt - ./pe05 blablabla -n dbnotexist.txt. You will print "Fail to open database.\n Fail to connect to db.\n" to screen and no file will be created.
+	4. notaorn.txt - ./pe05 database.txt -k notaorn.txt. You will print "Wrong arguments\n" to screen and no file will be created.
+	5. argcnot4.txt - ./pe05 database.txt. You will print "Wrong arguments\n" to screen and no file will be created.
+	6. filefail.txt - ./pe05 database.txt -a file.txt. You will print "Fail to open a file\n Fail to write to db\n" to screen and no file will be created. <br>
 		To test this you can create "file.txt" first and make it not writable by typing "chmod 444 file.txt" to change the file permission. 
 	7. We will run valgrind for each command and check whether your code has memory issues. 
 	
@@ -142,6 +142,8 @@ program for grading.  You cannot say, "If you change this, my program
 works." If your program misses a semicolon and cannot compile, you
 will receive zero.  Your score depends on what is submitted, nothing
 else.
+
+<strong>Do not print anything other than the required output (i.e., no debugging output, etc.). ifndef is used for grading. Please do not change it.</strong>
 
 This exercise will be graded as folows:
 1. `SortDatabaseByName()`: This function should sort the database by name in descending order using `qsort()`.
