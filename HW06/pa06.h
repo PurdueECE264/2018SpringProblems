@@ -1,4 +1,4 @@
-/* Do not change code below this line  */
+/* Do not modify this file. If you change it, you will get zero.  */
 #ifndef PA06_H
 #define PA06_H
 #include <stdbool.h>
