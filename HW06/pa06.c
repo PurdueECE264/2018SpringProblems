@@ -40,7 +40,7 @@ ParseResult * ParseQuery(int num, char ** query) {
 	This is a helper function we provide in this assignment.
 	It checks whether a stduent meets the condition.
 	You can choose not to use this function.
-	You are not allowed to modify this code.
+	Do not modify this function. If you change it, you will get zero.
 */
 bool Compare(Student * stu, Condition * condition) {
 	if (strcmp(condition -> field, "id") == 0) {
