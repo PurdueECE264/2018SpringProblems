@@ -62,7 +62,7 @@ Following are the files we provide:
 6. expected/ - This directroy contains expected output of the following commands. 
 	1. sortbyage.txt - ./pe05 database.txt -a sortbyage.txt. You will print "Write to db\n" or "to screen and create a file named sortbyage.txt with database info sorted by age.
 	2. sortbyname.txt - ./pe05 database.txt -n sortbyname.txt. You will print "Write to db\n" to screen and create a file named sortbyname.txt with database info sorted by name.
-	3. dbnotexist.txt - ./pe05 blablabla -n dbnotexist.txt. You will print "Fail to open database.\n Fail to connect to db.\n" to screen and no file will be created.
+	3. dbnotexist.txt - ./pe05 blablabla -n dbnotexist.txt. You will print "fail to open database.\n Fail to connect to db.\n" to screen and no file will be created.
 	4. notaorn.txt - ./pe05 database.txt -k notaorn.txt. You will print "Wrong arguments\n" to screen and no file will be created.
 	5. argcnot4.txt - ./pe05 database.txt. You will print "Wrong arguments\n" to screen and no file will be created.
 	6. filefail.txt - ./pe05 database.txt -a file.txt. You will print "Fail to open a file\n Fail to write to db\n" to screen and no file will be created. <br>
