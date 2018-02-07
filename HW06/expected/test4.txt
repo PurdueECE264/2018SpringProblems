@@ -1,0 +1,5 @@
+id:23 major:CS enrollment:No 
+id:25 major:CS enrollment:No 
+id:58 major:CS enrollment:No 
+id:151 major:CS enrollment:No 
+id:176 major:CS enrollment:No 
