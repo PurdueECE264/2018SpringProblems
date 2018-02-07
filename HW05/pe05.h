@@ -1,4 +1,4 @@
-/* Do not change code below this line */
+/*Do not modify this file. If you change it, you will get zero. */
 #ifndef PE05_H
 #define PE05_H
 #define MAX_LEN 80
