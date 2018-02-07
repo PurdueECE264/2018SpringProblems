@@ -1,1 +1,2 @@
-Fail to connect to db
+fail to open database.
+Fail to connect to db.
