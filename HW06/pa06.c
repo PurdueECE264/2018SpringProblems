@@ -34,10 +34,13 @@ ParseResult * ParseQuery(int num, char ** query) {
 }
 #endif
 
+
+#ifndef TEST_COMPARE
 /*
 	This is a helper function we provide in this assignment.
 	It checks whether a stduent meets the condition.
 	You can choose not to use this function.
+	You are not allowed to modify this code.
 */
 bool Compare(Student * stu, Condition * condition) {
 	if (strcmp(condition -> field, "id") == 0) {
@@ -91,6 +94,7 @@ bool Compare(Student * stu, Condition * condition) {
 	} 
 	return false;
 }
+#endif
 
 #ifndef TEST_EXECUTE
 /*

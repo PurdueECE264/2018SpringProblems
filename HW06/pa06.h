@@ -1,9 +1,9 @@
+/* Do not change code below this line  */
 #ifndef PA06_H
 #define PA06_H
 #include <stdbool.h>
 #define MAX_LEN 80
 
-/* Do not change code below this line  */
 
 /*
 	There are six fields in this structure.
