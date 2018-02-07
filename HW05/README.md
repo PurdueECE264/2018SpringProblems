@@ -48,7 +48,7 @@ In this exercise, you have to complete six functions - `CompareByName()`, `SortD
 		When argv[2] is "-a", you should sort the database by age in ascending order and write the database to a file and return `EXIT_SUCCESS`.
 		When argv[2] is "-n", you should sort the database by name in descending order and write the dataabse to a file and return `EXIT_SUCCESS`. 
 		For example, Student "Allen" should come after "Bob".
-	  	If argv[2] is neither "-a" nor "-s", you should print "Wrong arguments\n" and return `EXIT_FAILURE`.
+	  	If argv[2] is neither "-a" nor "-n", you should print "Wrong arguments\n" and return `EXIT_FAILURE`.
 	4. argv[3]: This is the output filename. You should write the output of database into this file.
 	5. print "Write to db\n" to screen if `WriteDatabase()` work. Otherwise, print "Fail to write to db\n"
 
