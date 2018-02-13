@@ -5,7 +5,7 @@
 # Announcements
 1. Please read the entire file before you ask any question.
 2. You should write your own Makefile to test the code.
-3. You will use your own `Connect()` and `Close()` functions from HW04 in this assignment. Those functions are not provided.
+3. You will use your own `Connect()` and `Close()` functions from HW04 in this assignment. Those functions are not provided. Please define these two functions in pa06.c
 4. Do not print anything other than the required output (i.e., no debugging output, etc.). ifndef is used for grading. Please do not change it.
 5. This assignment takes time. You should start earlier.
 
