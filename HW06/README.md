@@ -114,7 +114,7 @@ Following are the files we provide:
 	1. test1.txt -  `./pa06 SELECT name age WHERE age ">" 10 AND id = 1`
 	2. test2.txt -  `./pa06 SELECT age name WHERE age ">" 10 AND id = 1`
 	3. test3.txt -  `./pa06 SELECT enrollment age major WHERE age "<" 22 OR id = 100`
- 	4. test4.txt -  `./pa06 SELECT major enrollment WHERE major = CS AND enrollment = No AND year = Sophomore`
+ 	4. test4.txt -  `./pa06 SELECT id major enrollment WHERE major = CS AND enrollment = No AND year = Sophomore`
 	5. test5.txt -  `./pa06 SELECT id WHERE enrollment = Yes`
 	6. test6.txt -  `./pa06 SELECT id WHERE enrollment = Yes AND name = aa`
 	6. test7.txt -  `./pa06 SELECT age enrollment year major name id WHERE enrollment = No`
