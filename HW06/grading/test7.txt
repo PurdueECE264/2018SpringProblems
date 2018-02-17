@@ -1,0 +1,9 @@
+id:1 name:Natividad major:CHE year:Freshman enrollment:No age:21 
+id:2 name:Eyian major:CHE year:Senior enrollment:Yes age:20 
+id:3 name:Cosme major:AA year:Junior enrollment:No age:22 
+id:4 name:Rhyla major:BME year:Sophomore enrollment:Yes age:19 
+id:5 name:Premier major:ECE year:Junior enrollment:No age:22 
+id:6 name:Camp major:IE year:Senior enrollment:No age:21 
+id:7 name:Redding major:BME year:Senior enrollment:No age:20 
+id:8 name:Rennick major:CS year:Freshman enrollment:No age:21 
+id:9 name:Ziyang major:ME year:Freshman enrollment:No age:19 
