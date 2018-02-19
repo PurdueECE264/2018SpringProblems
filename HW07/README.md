@@ -169,7 +169,7 @@ else.
 Your code will be tested as following : <br/>
 1- 40 test cases using ./pe07 testAll.txt command line. 1 point for each test case.<br/>
 2- 15 test cases ./pe07 testInt.txt -I/-D/-VID  each, sums up to 45 cases. 1 point for each test case.<br/>
-3- 5 test cases for the main.c and Makefile. 1 point for each test case.<br/>
+3- 5 test cases for the main.c. 1 point for each test case.<br/>
 4- If you do not submit a test input, you will lose 10 points. If your expected output is wrong, you will lose at most 5 points.<br/>
 **All Test cases will be released later.
 
