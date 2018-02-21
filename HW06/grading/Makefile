@@ -1,12 +1,38 @@
 CFLAGS = -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror
 GCC = gcc $(CFLAGS)
 VAL = valgrind --tool=memcheck --leak-check=full --verbose
+FILE = database.txt
+SRCS = pa06.c main.c
+OBJ = obj/pe04.o
 OBJS = $(SRCS:%.c=%.o)
+PARSEFLAGS = -DTEST_CONSTRUCT -DTEST_EXECUTE -DTEST_WRITE -DTEST_FREEPARSE -DTEST_FREEEXECUTE
+EXECUTEFLAGS = -DTEST_CONSTRUCT -DTEST_PARSE -DTEST_WRITE -DTEST_FREEPARSE -DTEST_FREEEXECUTE 
+WRITEFLAGS = -DTEST_CONSTRUCT -DTEST_PARSE -DTEST_EXECUTE -DTEST_FREEPARSE -DTEST_FREEEXECUTE 
 
-all: testcorrect memcheck
+all: testparse testexecute testwrite testcorrect memcheck
 
 .c.o:
 	$(GCC) $(FLAGS) -c $*.c
+
+pa06: $(OBJS)
+	$(GCC) $(OBJS) $(OBJ) -o pa06
+
+testparse:
+	$(GCC) $(PARSEFLAGS) pa06.c our_pa06.c our_main.c -o pa06 &> test_parse_compile.txt
+	-timeout 3s ./pa06 SELECT id WHERE age ">" 20 AND id "<" 100 &> stu_parse.txt
+	-mv output.txt stu_parse.txt
+	-diff -w -i exp_parse.txt stu_parse.txt &> parse_res.txt
+
+testexecute: 
+	$(GCC) $(EXECUTEFLAGS) pa06.c our_pa06.c test_execute.c -o pa06 &> test_execute_compile.txt
+	-timeout 3s ./pa06 SELECT id WHERE age ">" 20 AND id "<" 100 &> stu_execute.txt 
+	-diff -w -i exp_execute.txt stu_execute.txt &> execute_res.txt
+
+testwrite:
+	$(GCC) $(WRITEFLAGS) pa06.c our_pa06.c our_main.c -o pa06 &> test_write_compile.txt
+	-timeout 3s ./pa06 SELECT id enrollment age major name year WHERE age ">" 21 OR id "<" 10
+	-mv output.txt stu_write.txt
+	-diff -w -i exp_write.txt stu_write.txt &> write_res.txt
 
 testcorrect: 
 	$(GCC) pa06.c main.c -o pa06 &> test_correct_compile_res.txt

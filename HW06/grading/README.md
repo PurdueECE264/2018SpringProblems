@@ -3,9 +3,34 @@
 ## This is how we grade your HW06
 
 
-Your grade on HW06 is propotional to the number of test case you pass.
-There are 20 testcases in toal. 5 point/testcase.
+Due to a mistake in previous grading program, HW06 was not graded properly.
+If your new score is lower than the previously posted score, you will keep the higher score. If the new score is higher, your score will be updated.
 
+Your grade on HW06 is graded as follow:
+1. ParseQuery() function (30 points):
+	We use your function, compile and run
+	```BASH
+	./pa06 SELECT id WHERE age ">" 20 AND id "<" 100
+	mv output.txt stu_parse.txt
+	diff -w -i exp_parse.txt stu_parse.txt &> parse_res.txt
+	```
+2. ExecuteQuery() function (30 points):
+	We use your function, compile and run
+	```BASH
+	./pa06 SELECT id WHERE age ">" 20 AND id "<" 100 &> stu_execute.txt
+    diff -w -i exp_execute.txt stu_execute.txt &> execute_res.txt	
+	```
+
+3. WriteDb() function (20 points):
+	We ue your function, compile and run
+	```BASH
+	./pa06 SELECT id enrollment age major name year WHERE age ">" 21 OR id "<" 10
+    mv output.txt stu_write.txt
+    diff -w -i exp_write.txt stu_write.txt &> write_res.txt
+	```
+	
+4. Correctness of your program (20 points):
+The exepcted output of the following commands are named as test1.txt, test2.txt, ...test20.txt
 ```SQL
 	1. SELECT major enrollment WHERE id ">" 199
 	2. SELECT enrollment major WHERE id ">" 199
@@ -29,7 +54,7 @@ There are 20 testcases in toal. 5 point/testcase.
 	20. SELECT enrollment WHERE year "=" Freshman
 
 ```
-2. Memory check using all the queries above.
+5. Memory check using all the queries above.
 
 If there are memory errors, you will be penalized 40% of the total grade.
 
