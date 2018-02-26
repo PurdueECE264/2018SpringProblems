@@ -10,11 +10,11 @@
 - In int_expected.txt, you will find the right output for each case in testInt.txt </br></br>
 For testing, you can compile and run  your code through the following command:
 <pre>
-./pe07 testInt.txt -I > out.txt
+./pe07 Grading/testInt.txt -I > out.txt
 </pre>
 Then run the `diff` command to compare or you can use `vimdiff` command:
 <pre>
-diff -w -i -U 0 out.txt int_expected.txt
+diff -w -i -U 0 out.txt Grading/int_expected.txt
 </pre>
 
 	
@@ -23,11 +23,11 @@ diff -w -i -U 0 out.txt int_expected.txt
 - In double_expected.txt, you will find the right output for each case in testDbl.txt </br></br>
 For testing, you can compile and run  your code through the following command:
 <pre>
-./pe07 testDbl.txt -D > out2.txt
+./pe07 Grading/testDbl.txt -D > out2.txt
 </pre>
 Then run the `diff` command to compare or you can use `vimdiff` command:
 <pre>
-diff -w -i -U 0 out2.txt double_expected.txt
+diff -w -i -U 0 out2.txt Grading/double_expected.txt
 </pre>
 
 
@@ -36,11 +36,11 @@ diff -w -i -U 0 out2.txt double_expected.txt
 - In validId_expected.txt, you will find the right output for each case in testVID.txt </br></br>
 For testing, you can compile and run  your code through the following command:
 <pre>
-./pe07 testVID.txt -VID > out3.txt
+./pe07 Grading/testVID.txt -VID > out3.txt
 </pre>
 Then run the `diff` command to compare or you can use `vimdiff` command:
 <pre>
-diff -w -i -U 0 out3.txt validId_expected.txt
+diff -w -i -U 0 out3.txt Grading/validId_expected.txt
 </pre>
 
 
@@ -49,11 +49,11 @@ diff -w -i -U 0 out3.txt validId_expected.txt
 - In all_expected.txt, you will find the right output for each case in testAll.txt </br></br>
 For testing, you can compile and run  your code through the following command:
 <pre>
-./pe07 testAll.txt > out4.txt
+./pe07 Grading/testAll.txt > out4.txt
 </pre>
 Then run the `diff` command to compare or you can use `vimdiff` command:
 <pre>
-diff -w -i -U 0 out4.txt all_expected.txt
+diff -w -i -U 0 out4.txt Grading/all_expected.txt
 </pre>
 
 ## Cases
