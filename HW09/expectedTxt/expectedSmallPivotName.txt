@@ -1,0 +1,20 @@
+ID:30, Name:Cherilyn, Major:CS, Enrollment:No, Year:Freshman, Age:19
+ID:28, Name:Bradly, Major:ECE, Enrollment:No, Year:Junior, Age:20
+ID:25, Name:Aedin, Major:CS, Enrollment:No, Year:Sophomore, Age:20
+ID:11, Name:Anir, Major:ECE, Enrollment:Yes, Year:Junior, Age:21
+ID:8, Name:Rennick, Major:CS, Enrollment:No, Year:Freshman, Age:21
+ID:29, Name:Meridian, Major:CHE, Enrollment:No, Year:Junior, Age:21
+ID:23, Name:Lynox, Major:CS, Enrollment:No, Year:Sophomore, Age:19
+ID:19, Name:Finnick, Major:IE, Enrollment:Yes, Year:Junior, Age:22
+ID:18, Name:Evina, Major:ABE, Enrollment:No, Year:Junior, Age:19
+ID:3, Name:Cosme, Major:AA, Enrollment:No, Year:Junior, Age:22
+ID:14, Name:Luann, Major:IE, Enrollment:Yes, Year:Junior, Age:21
+ID:13, Name:Jerzie, Major:CHE, Enrollment:No, Year:Freshman, Age:19
+ID:17, Name:Javan, Major:AA, Enrollment:No, Year:Freshman, Age:21
+ID:20, Name:Nili, Major:ECE, Enrollment:No, Year:Sophomore, Age:19
+ID:27, Name:Miro, Major:BME, Enrollment:Yes, Year:Freshman, Age:18
+ID:15, Name:Nataley, Major:CS, Enrollment:Yes, Year:Senior, Age:22
+ID:5, Name:Premier, Major:ECE, Enrollment:No, Year:Junior, Age:22
+ID:26, Name:Sayuri, Major:CHE, Enrollment:No, Year:Junior, Age:22
+ID:22, Name:Rohan, Major:IE, Enrollment:No, Year:Junior, Age:19
+Write to db
