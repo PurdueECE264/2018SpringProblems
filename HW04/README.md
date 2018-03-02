@@ -36,13 +36,12 @@ In this exercise, you have to complete three functions - `Connect()`, `Close()`,
 	2. name: the name of the student you are looking for.
 	3. This function should return a `NULL` if the name is not in the database, otherwise it should return a pointer to the `Student` structure which stores all the info of that student. 
 4. `main()` - In this exercise, you will learn to use `argc` and `argv`. Here are the specifications.
-	1. `argc`: If `argc` is less than 3, you should return `EXIT_FAILURE` and print "Insufficient arguments\n".
-	2. `argv[1]`: name of the input file.
-	3. `argv[2]`: should be either "-a", or "-s".
- 			When `argv[2]` is "-a", you should print all the students in database using `PrintDatabase()` function and return `EXIT_SUCCESS`.
- 			When `argv[2]` is "-s', you should  enter the name of the student in `argv[3]` and print information of that student, if there is no input in `argv[3]` you should print "Wrong arguments\n" and return `EXIT_FAILURE`.
-			If `argv[2]` is neither "-a" nor "-s", you should print "Wrong arguments\n" and return `EXIT_FAILURE`
-	4. `argv[3]`: We only need input in `argv[3]` when `argv[2]` is equal to "-s". `argv[3]` is the name of the student you are looking for. If there is no such student, you should print "No this student\n". Otherwise, use `PrintStudent()` function to print the information of the student.
+	1. `argc`: 
+		1. If `argc` is less than 3, you should return `EXIT_FAILURE` and print "Insufficient arguments\n".
+		2. When argc is 3, `argv[2]` should be "-a" and you should print all the students in database using `PrintDatabase()` function and return `EXIT_SUCCESS`. Otherwise, you should print "Wrong arguments\n" to screen and return `EXIT_FAILURE`.
+		3. When argc is 4, `argv[2]` should be "-s" and you should  enter the name of the student in `argv[3]` and print information of that student and return `EXIT_SUCCESS`. If there is no such student, you should print "No this student\n" to screen and return `EXIT_SUCCESS`. Otherwise, you should print "Wrong arguments\n" to screen and return `EXIT_FAILURE`.
+		4. When argc is larger than 4, you should print "Too many arguments\n" to screen and return `EXIT_FAILURE`.
+	2. `argv[1]`: name of the input file (i.e., database.txt).
 5. Define `Student` structure in pe04.h: The `Student` structure has 6 fields, we have deifned 2 of them for you. Complete the remaining 6 fields. See `pe04.h` for further information.
 
 # Testing your code
@@ -55,7 +54,9 @@ Following are the files we provide:
 6. `output2.txt` - This is an example output when you run `./pe04 database.txt -s name`
 	Note that this file has multiple lines because we run the command with different names.
 7. `output3.txt` - This is an example output when you run `./pe04` with wrong argc or argv arguments. 
-	Differnt types of argc, argv errors leads to different output. 
+	1. The first line in this file is the expected output of running this command: `./pe04 database.txt`
+	2. The second line in this file is the exepected output of running following commands: `./pe04 databse.txt -a NAME1` or `./pe04 database.txt -s`.
+	3. The third line in this file is the expected output of running this command: `./pe04 database.txt -s NAME bla`
 
 
 To test your code. You have to first compile it and then run the following command.
@@ -92,7 +93,14 @@ You have to submit the following file in a <strong>zip</strong> folder on the bl
 * `pe04.c` - This file should have `Connect()`, `Close()`, `SearchByName()` functions completed.
 * `pe04.h` - This file should have `Student` structure defined.
 * `main.c` - This file should have `main()` function completed.
-<strong>You will not get any credits if the submitted file is not zipped</strong>
+
+Type the following command to zip your file.
+```bash
+	zip pe04.zip pe04.c main.c pe04.h
+```
+Submit <strong>pe04.zip</strong> to blackboard. 
+<strong>You will not get any credits if you do not follow the submission instructions </strong>
+
 
 The **only** way to submit homework is through Blackboard.
 
