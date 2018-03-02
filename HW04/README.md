@@ -20,22 +20,24 @@ You will learn to
 * Read text file.
 * Use argc and argv correctly in main.
 
+# Suggestions 
+You should thoroughly understand the concepts of `structure`, `pointer`, and `memory allocation` before you start this homework.
 
 # Functions you need to complete
 In this exercise, you have to complete three functions - `Connect()`, `Close()`, `SearchByName()` in `pe04.c`, `main()` in `main.c`, and define `Student` structure in the `pe04.h` file.
 
-1. `Connect()` - Read the content in the file and allocate appropriate memory to store the content. This function accepts only one argument:
+1. `Connect(char * filename)` - Read the content in the file and allocate appropriate memory to store the content in `StudentDatabse` object. This function has one argument:
 	1. filename: the filename of the database you are going to connect.
 	2. You may want to use: `fopen()`, `fclose()`, `fscanf()`, `feof()` to read the file content.
 	3. This function returns a pointer to `StudentDatabase` object. 
 	4. If you fail to connect to the database, you should return NULL.
-2. `Close()` - This function releases the memory you allocated in `Connect()` and close the database. Not completing this function will lead to memory leak. This function has one argument:
+2. `Close(StudentDatabase * studb)` - This function releases the memory you allocated in `Connect()` and close the database. Not completing this function will lead to memory leak. This function has one argument:
 	1. studb: the pointer to `StudentDatabase` object of which the memory needs to be freed.   
-3. `SearchByName()` - This function searches the student by name in database. It accepts two arguments:
+3. `SearchByName(StudentDatabase * studb, char * name)` - This function searches the student by name in database. It accepts two arguments:
 	1. studb: the pointer to `StudentDatabase` object where you will search for the student.
 	2. name: the name of the student you are looking for.
 	3. This function should return a `NULL` if the name is not in the database, otherwise it should return a pointer to the `Student` structure which stores all the info of that student. 
-4. `main()` - In this exercise, you will learn to use `argc` and `argv`. Here are the specifications.
+4. `main(int argc, char ** argv)` - In this exercise, you will learn to use `argc` and `argv`. Here are the specifications.
 	1. `argc`: 
 		1. If `argc` is less than 3, you should return `EXIT_FAILURE` and print "Insufficient arguments\n".
 		2. When argc is 3, `argv[2]` should be "-a" and you should print all the students in database using `PrintDatabase()` function and return `EXIT_SUCCESS`. Otherwise, you should print "Wrong arguments\n" to screen and return `EXIT_FAILURE`.
@@ -61,11 +63,11 @@ Following are the files we provide:
 
 To test your code. You have to first compile it and then run the following command.
 
-Print all student info in database.
+Print all student info in database to screen.
 ```
 ./pe04 database.txt -a
 ```
-Print the student you are looking for in database.
+Print the student you are looking for in database to screen.
 ```
 ./pe04 database.txt -s name
 ```
@@ -146,3 +148,12 @@ This exercise will be graded as folows:
 
 <strong>Do not print anything other than the required output (i.e., no debugging output, etc.).</strong>
 <strong>`ifndef` is used for grading. Please do not change it.</strong>
+
+# Q&A
+Q1. If connect doesn't succeed, what error message should we print?
+A1. `Connect()` function should return NULL when connect doesn't succeed. You don't have to print error message.
+
+Q2. Are the outputx.txt files in HW04 basically the expectedx.txt that were given in our old homeworks? Can we use it in our Makefile for HW04?
+A2. Yes, they are basically the expectedx.txt that were given in old homeworks and you can use that in your Makefile for HW04. 
+
+
