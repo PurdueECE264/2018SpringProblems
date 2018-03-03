@@ -18,7 +18,7 @@ The grade for each command is calculated as following : (20 - 20\*(The number of
 
 
 	
-## createDouble() function (100 points)
+## createVID() function (50 points)
 - To test this function we used three commands which are : 
 <pre>
 ./pa08 -VID a a B B 3 3 4 | sort > svtest1.txt #(20 points) #right output in vtest1
