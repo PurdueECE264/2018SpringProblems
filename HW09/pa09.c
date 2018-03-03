@@ -60,10 +60,12 @@ int Partition(Student** stuArray, int start, int end , CompareFunction compare){
 	//TODO 3. Initialize the partition Index
 
 
-	//TODO 4: iterate over the whole array to partition the array such that the final array has values
-	// smaller than pivot on left side of array and values greater than pivot are on
-	// the right side of array. Please see FAQ 7 example for clarification
-	// Hint: You will need to use the swap function to do this in-place
+	//TODO 4: //1. start from the left side find the value greater than the pivot .
+	// Once you find it - let that be A
+	// 2. Start from end now and find the value which is smaller than the pivot
+	// once you find it let that be B
+	// swap A & B
+	// Repeat till left<=right
 
 	//TODO 5. return the partition Index - check README FAQ example to see its working
 
