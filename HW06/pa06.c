@@ -5,6 +5,16 @@
 #include "pa06.h"
 #define MAX_LEN 80
 
+
+
+#ifndef TEST_CONNECT
+/* Define your Connect() here.*/
+#endif
+
+#ifndef TEST_CLOSE
+/* Define your Close() here.*/
+#endif
+
 #ifndef TEST_CONSRUCT
 /* 
 	Construct SelectedField.
