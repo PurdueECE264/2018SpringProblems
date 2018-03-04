@@ -22,7 +22,7 @@ Student * SearchByName(StudentDatabase * studb, char * name);
 void Close(StudentDatabase * studb);
 void PrintDatabase(StudentDatabase * studb);
 void PrintStudent(Student * stu);
-void SortDatabaseByName(StudentDatabase * studb);
-void SortDatabaseByAge(StudentDatabase * studb);
+void SortDatabaseByName(StudentDatabase * db);
+void SortDatabaseByAge(StudentDatabase * db);
 int WriteDatabase(char *filename, StudentDatabase * db);
 #endif

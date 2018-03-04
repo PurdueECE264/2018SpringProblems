@@ -10,7 +10,7 @@ static int CompareByName(const void * s1, const void * s2) {
 #endif
 
 #ifndef TEST_NAME
-void SortDatabaseByName(StudentDatabase * studb) {
+void SortDatabaseByName(StudentDatabase * db) {
 	// use qsort to sort the database.
 }
 #endif
@@ -22,7 +22,7 @@ static int CompareByAge(const void * s1, const void * s2) {
 #endif
 
 #ifndef TEST_AGE
-void SortDatabaseByAge(StudentDatabase * studb) {
+void SortDatabaseByAge(StudentDatabase * db) {
 	// use qsort to sort the database.
 
 }
