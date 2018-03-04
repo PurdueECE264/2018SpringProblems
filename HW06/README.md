@@ -193,10 +193,17 @@ This exercise will be graded as folows:
 
 # Q&A
 **1. Where should I define `Connect()` and `Close()` function?**
+
 Ans: You should define these functions in pa06.c. 
+
 **2. Why do we need to add double quotation marks around the operator when testing our sql-like query?**
+
 Ans:  The reason for adding double quotation mark is that  `<` and `>` are linux commands. `>` means redirect standard output. `<` means redirect standard input. You have to add double quotation marks in the case such as "<=", ">=", "<", ">" when you type your sql query, so that linux will view it as common string, not the built-in linux commands
+
 **3. What arguments should I pass to `ParseQuery()` function?**
+
 Ans: You will call `ParseQuery()` function in main.c and pass `argc` and `argv` to this function.
+
 **4. Do I need to handle invalid input? (e.g., argv does not has some key words such as wrong of SELECT and WHERE ,or put nothing after WHERE.)**
+
 Ans: You can assume all inputs are valid, meaning no wrong spellings, incorrect format, or fields that does not exist. 
