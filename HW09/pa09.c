@@ -60,9 +60,9 @@ int Partition(Student** stuArray, int start, int end , CompareFunction compare){
 	//TODO 3. Initialize the partition Index
 
 
-	//TODO 4: //1. start from the left side find the value greater than the pivot .
+	//TODO 4: //1. start from the left side, increment till the value is smaller than the pivot .
 	// Once you find it - let that be A
-	// 2. Start from end now and find the value which is smaller than the pivot
+	// 2. Start from right side(end-1) and decrement till the value is greater than the pivot
 	// once you find it let that be B
 	// swap A & B
 	// Repeat till left<=right
