@@ -1,0 +1,24 @@
+ID:40, Name:Zailen, Major:BME, Enrollment:Yes, Year:Senior, Age:22
+ID:22, Name:Tessah, Major:AA, Enrollment:No, Year:Junior, Age:22
+ID:20, Name:Coyer, Major:CS, Enrollment:No, Year:Freshman, Age:14
+ID:9, Name:Tejus, Major:CS, Enrollment:Yes, Year:Senior, Age:14
+ID:8, Name:Fionnula, Major:ABE, Enrollment:No, Year:Junior, Age:13
+ID:10, Name:Jayzen, Major:ME, Enrollment:Yes, Year:Junior, Age:12
+ID:37, Name:Chan, Major:BME, Enrollment:No, Year:Sophomore, Age:12
+ID:28, Name:Juriel, Major:CS, Enrollment:Yes, Year:Senior, Age:10
+ID:29, Name:Anthuan, Major:AA, Enrollment:No, Year:Junior, Age:13
+ID:6, Name:Ethon, Major:CS, Enrollment:Yes, Year:Junior, Age:17
+ID:38, Name:Akili, Major:ABE, Enrollment:No, Year:Freshman, Age:16
+ID:4, Name:Amiaya, Major:CS, Enrollment:Yes, Year:Sophomore, Age:19
+ID:39, Name:Akhila, Major:CHE, Enrollment:Yes, Year:Sophomore, Age:18
+ID:16, Name:Omelia, Major:ABE, Enrollment:Yes, Year:Junior, Age:19
+ID:23, Name:Nygel, Major:BME, Enrollment:No, Year:Sophomore, Age:26
+ID:5, Name:Cylus, Major:BME, Enrollment:Yes, Year:Sophomore, Age:22
+ID:24, Name:Hayder, Major:IE, Enrollment:No, Year:Freshman, Age:23
+ID:2, Name:Kinsli, Major:AA, Enrollment:No, Year:Freshman, Age:26
+ID:32, Name:Hien, Major:BME, Enrollment:No, Year:Freshman, Age:24
+ID:7, Name:Dahlia, Major:IE, Enrollment:Yes, Year:Senior, Age:26
+ID:17, Name:Suleman, Major:ECE, Enrollment:Yes, Year:Junior, Age:27
+ID:35, Name:Calliope, Major:AA, Enrollment:No, Year:Sophomore, Age:29
+ID:34, Name:Mahira, Major:BME, Enrollment:No, Year:Senior, Age:28
+Write to db

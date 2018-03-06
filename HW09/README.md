@@ -96,7 +96,7 @@ Following are the files we provide:
 	2. `sortSmallbyname.bin` - ./pa09 smallDbBinary.bin -n sortSmallbyname.bin
 	3. `sortbyage.bin` - ./pa09 databaseBinary.bin -a sortbyage.bin
 	4. `sortbyname.bin` - ./pa09 databaseBinary.bin -n sortbyname.bin
-
+9. `database` - This folder contains more binary input files for testing the code. 
 -------
 To test your code. You have to first compile it and then run the following command.
 
@@ -104,7 +104,7 @@ Sort the database by age in ascending order and write it to a file.
 ```
 ./pa09 databaseBinary.bin -a outputSortAge.bin > outputPivotsAge.txt
 ```
-Sort the database by name in descending order and write it to a file.
+Sort the database by name in ascending order and write it to a file.
 ```
 ./pa09 databaseBinary.bin -n outputSortName.bin > outputPivotsName.txt
 ```

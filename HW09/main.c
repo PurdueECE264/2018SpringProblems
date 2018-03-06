@@ -11,7 +11,7 @@
 	2. argv[1]: name of the binary input file. i.e., databaseBinary.bin
 	3. argv[2]: should be either "-a", or "-n".
 		When argv[2] is "-a", you should sort the database by age in ascending order and print the database and return EXIT_SUCCESS.
-		When argv[2] is "-n", you should sort the database by name in descending order and print the dataabse and return EXIT_SUCCESS.
+		When argv[2] is "-n", you should sort the database by name in ascending order and print the dataabse and return EXIT_SUCCESS.
 		For example, Student "Allen" should come after "Bob".
 	  	If argv[2] is neither "-a" nor "-n", you should print "Wrong arguments\n" and return EXIT_FAILURE.
 	4. argv[3]: This is the output filename. You should write the output in the binary format of database into this file.
