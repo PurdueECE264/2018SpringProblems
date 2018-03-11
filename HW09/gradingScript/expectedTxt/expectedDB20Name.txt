@@ -1,0 +1,14 @@
+ID:20, Name:Sattam, Major:AA, Enrollment:No, Year:Senior, Age:22
+ID:13, Name:Juston, Major:ECE, Enrollment:Yes, Year:Freshman, Age:25
+ID:17, Name:Dylilah, Major:ECE, Enrollment:No, Year:Sophomore, Age:22
+ID:6, Name:Afrah, Major:CS, Enrollment:Yes, Year:Freshman, Age:22
+ID:15, Name:Chanler, Major:CHE, Enrollment:No, Year:Sophomore, Age:22
+ID:3, Name:Alexandros, Major:IE, Enrollment:Yes, Year:Junior, Age:12
+ID:10, Name:Emaree, Major:AA, Enrollment:Yes, Year:Junior, Age:22
+ID:9, Name:Nishanth, Major:ABE, Enrollment:No, Year:Sophomore, Age:19
+ID:16, Name:Mariya, Major:CHE, Enrollment:Yes, Year:Junior, Age:15
+ID:14, Name:Wendall, Major:ABE, Enrollment:Yes, Year:Freshman, Age:15
+ID:11, Name:Yosief, Major:IE, Enrollment:No, Year:Freshman, Age:14
+ID:12, Name:Wynnie, Major:IE, Enrollment:Yes, Year:Freshman, Age:15
+ID:5, Name:Weslin, Major:CS, Enrollment:Yes, Year:Sophomore, Age:22
+Write to db
