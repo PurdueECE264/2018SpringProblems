@@ -1,0 +1,72 @@
+insF 1
+insL 2
+insA 3 2
+insF 4
+insL 5
+insA 6 5
+insA 6 7
+insL 7
+insL 4
+insF 9
+insF 10
+insF 4
+insL 4
+insA 4 5
+delFM 4
+delA 2
+delAM 4
+delA 0
+delA 0
+insL 7
+insL 2017
+insF 7
+insA 2017 2
+insA 7 0
+insA 8 0
+insA 8 0
+insL 2018
+delAM 2017
+delAM 7
+delAM 8
+delFM 2018
+insL 7
+insA 0 -1
+insA 0 0
+insL 8
+insF -1
+insA -2 0
+insA -3 0
+insA -4 0
+insA -8 0
+insA -7 1
+insA -5 2
+insA -6 2
+insF -9
+insL 9
+insL 10
+insF -10
+insF 11
+insF 11
+insF 11
+insL 11
+insL 11
+insA 11 25
+delFM 11
+delA 24
+delA 0
+delA 22
+delAM 11
+delFM 0
+delAM -10
+delFM 10
+insA 0 1
+insA 3 5
+insF 5
+insL 10
+delFM 10
+delAM 3
+delFM 4
+insL 1
+delAM 11111
+
+

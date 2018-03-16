@@ -1,0 +1,36 @@
+L 
+insF 2
+insA 1 1
+insL 2
+L 
+insA 1 4 
+insA 3 3
+L 
+insL 4
+insF 1
+insA 5 0
+insL 7
+insA 8 5
+insA 88 0
+insA 4 4
+L 
+insL 5
+insL 4
+insA 3 13
+insF 14
+insL 4
+insA 12 5
+insF 1
+L 
+delAM 1
+L 
+delAM 4
+delFM 3
+delA 9
+delA 8
+delA 7
+delFM 88
+delAM 5
+L 
+
+
