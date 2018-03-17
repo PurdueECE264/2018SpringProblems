@@ -90,13 +90,13 @@ Following are the files we provide:
 To test your code, we provide you with 3 different tese cases:<br>
 
 The following command will use the commands in the test1.txt, and operate the linkedlist as the commands suggest. The output is in outTest1.txt
-`./pe10 test1.txt`<br>
+`./pe11 test1.txt`<br>
 
 The following command will use the commands in the test2.txt, and operate the linkedlist as the commands suggest. The output is in outTest2.txt
-`./pe10 test2.txt`<br>
+`./pe11 test2.txt`<br>
 
 The following command will use the commands in the test3.txt, and operate the linkedlist as the commands suggest. The output is in outTest3.txt
-`./pe10 test3.txt`<br>
+`./pe11 test3.txt`<br>
 
 
 `Attention: There is a 15% penalty of your final grade, if you have a memory leak. Also if you don't submit a makefile you will lose 5 points`
