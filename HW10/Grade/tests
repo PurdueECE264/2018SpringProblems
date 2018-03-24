@@ -1,0 +1,11 @@
+
+================print case================
+./pe10 10 2 1 > sptest.txt 
+
+================josephus cases================
+./pe10 20 2 2 > stest1.txt
+./pe10 10 10 1 > stest2.txt
+./pe10 19 5 3 > stest3.txt
+./pe10 20 19 2 > stest4.txt
+./pe10 100 5 2 > stest5.txt
+./pe10 33 7 3 > stest6.txt
