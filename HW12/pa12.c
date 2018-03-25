@@ -54,6 +54,8 @@ void josp(struct node ** head,int k,int p,int length)
 //The values of the nodes within the doubly linkedlist will be the same as array indices.
 //For example, if the doubly linkedlist length is 4, the values of the nodes will be 0 1 2 3
 //NOTE: this is a doubly linkedlist you should assign the prev pointer for each node probably.
+//NOTE: head->prev is NULL as well as tail->next.
+
 void init2(struct dnode ** head,int length)
 {
 	
