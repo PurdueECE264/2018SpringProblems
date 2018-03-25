@@ -80,6 +80,7 @@ In this function you will implement the solution for the modified verison of jos
 <strong>print2()</strong> </br>
 In this function you will print the values of the nodes within the doubly linkedlist after any delete operation (caused by value of the node being divisible by 'q' or count=`k`). The values will be separated by commas. For example, if the nodes within the linkedlist have the following values `1 3 4 6`, the output should be like this `1,3,4,6`. Please make sure that you don't have an extra comma at the beginning nor at the end. 
 
+`NOTE: head->prev is NULL as well as tail->next`
 
 # Testing your code
 Following are the files we provide:
