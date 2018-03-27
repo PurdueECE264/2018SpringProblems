@@ -1,5 +1,0 @@
-char=c, freq=1
-char=d, freq=1
-char=b, freq=2
-char=r, freq=2
-char=a, freq=5

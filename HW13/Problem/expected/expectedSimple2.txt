@@ -1,8 +1,0 @@
-char= , freq=1
-char=d, freq=1
-char=e, freq=1
-char=h, freq=1
-char=r, freq=1
-char=w, freq=1
-char=o, freq=2
-char=l, freq=3
