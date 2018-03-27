@@ -1,15 +1,8 @@
 char=Z, freq=1
-char=à, freq=1
-char=ê, freq=1
-char=í, freq=1
-char=§, freq=1
-char=√, freq=1
-char=À, freq=1
 char=Y, freq=2
 char=!, freq=3
 char=%, freq=3
 char=~, freq=3
-char=î, freq=3
 char=?, freq=4
 char=Q, freq=4
 char={, freq=5
@@ -19,9 +12,6 @@ char=\, freq=7
 char=<, freq=8
 char=|, freq=8
 char=>, freq=10
-char=ì, freq=13
-char=Ä, freq=16
-char=‚, freq=17
 char=*, freq=19
 char=V, freq=21
 char=', freq=26
@@ -30,11 +20,11 @@ char=W, freq=30
 char=G, freq=34
 char=_, freq=35
 char=H, freq=37
+char=	, freq=38
 char=K, freq=39
 char=&, freq=40
 char==, freq=42
 char=q, freq=45
-char=	, freq=47
 char=U, freq=47
 char=^, freq=47
 char=E, freq=48
@@ -100,4 +90,4 @@ char=i, freq=3253
 char=a, freq=3532
 char=t, freq=3571
 char=e, freq=5102
-char= , freq=8440
+char= , freq=8439

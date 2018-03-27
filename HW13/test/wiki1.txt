@@ -8,7 +8,7 @@ Paradigm	Imperative (procedural), structured
 Designed by	Dennis Ritchie
 Developer	Dennis Ritchie & Bell Labs (creators); ANSI X3J11 (ANSI C); ISO/IEC JTC1/SC22/WG14 (ISO C)
 First appeared	1972; 46 years ago[2]
-Stable release	
+Stable release
 C11 / December 2011; 6 years ago
 Typing discipline	Static, weak, manifest, nominal
 OS	Cross-platform
@@ -22,10 +22,10 @@ B (BCPL, CPL), ALGOL 68,[3] Assembly, PL/I, FORTRAN
 Influenced
 Numerous: AMPL, AWK, csh, C++, C--, C#, Objective-C, BitC, D, Go, Java, JavaScript, Julia, Limbo, LPC, Perl, PHP, Pike, Processing, Python, Ring[4], Rust, Seed7, Vala, Verilog (HDL)[5]
  C Programming at Wikibooks
-C (/siː/, as in the letter c) is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations. By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems.
+C (/si/, as in the letter c) is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations. By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems.
 C was originally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs,[6] and used to re-implement the Unix operating system.[7] It has since become one of the most widely used programming languages of all time,[8][9] with C compilers from various vendors available for the majority of existing computer architectures and operating systems. C has been standardized by the American National Standards Institute (ANSI) since 1989 (see ANSI C) and subsequently by the International Organization for Standardization (ISO).
 C is an imperative procedural language. It was designed to be compiled using a relatively straightforward compiler, to provide low-level access to memory, to provide language constructs that map efficiently to machine instructions, and to require minimal run-time support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant and portably written C program can be compiled for a very wide variety of computer platforms and operating systems with few changes to its source code. The language has become available on a very wide range of platforms, from embedded microcontrollers to supercomputers.
-Contents  [hide] 
+Contents  [hide]
 1	Overview
 1.1	Relations to other languages
 2	History
@@ -43,7 +43,7 @@ Contents  [hide]
 5	Data types
 5.1	Pointers
 5.2	Arrays
-5.3	Array–pointer interchangeability
+5.3	Arraypointer interchangeability
 6	Memory management
 7	Libraries
 8	Language tools
@@ -154,8 +154,8 @@ Expressions can use a variety of built-in operators and may contain function cal
 Kernighan and Ritchie say in the Introduction of The C Programming Language: "C, like any other language, has its blemishes. Some of the operators have the wrong precedence; some parts of the syntax could be better."[22] The C standard did not attempt to correct many of these blemishes, because of the impact of such changes on already existing software.
 Character set
 The basic C source character set includes the following characters:
-Lowercase and uppercase letters of ISO Basic Latin Alphabet: a–z A–Z
-Decimal digits: 0–9
+Lowercase and uppercase letters of ISO Basic Latin Alphabet: az AZ
+Decimal digits: 09
 Graphic characters: ! " # % & ' ( ) * + , - . / : ; < = > ? [ \ ] ^ _ { | } ~
 Whitespace characters: space, horizontal tab, vertical tab, form feed, newline
 Newline indicates the end of a text line; it need not correspond to an actual single character, although for convenience C treats it as one.
@@ -271,7 +271,7 @@ Since arrays are always accessed (in effect) via pointers, array accesses are ty
 C does not have a special provision for declaring multi-dimensional arrays, but rather relies on recursion within the type system to declare arrays of arrays, which effectively accomplishes the same thing. The index values of the resulting "multi-dimensional array" can be thought of as increasing in row-major order.
 Multi-dimensional arrays are commonly used in numerical algorithms (mainly from applied linear algebra) to store matrices. The structure of the C array is well suited to this particular task. However, since arrays are passed merely as pointers, the bounds of the array must be known fixed values or else explicitly passed to any subroutine that requires them, and dynamically sized arrays of arrays cannot be accessed using double indexing. (A workaround for this is to allocate the array with an additional "row vector" of pointers to the columns.)
 C99 introduced "variable-length arrays" which address some, but not all, of the issues with ordinary C arrays.
-Array–pointer interchangeability
+Arraypointer interchangeability
 The subscript notation x[i] (where x designates a pointer) is syntactic sugar for *(x+i).[32] Taking advantage of the compiler's knowledge of the pointer type, the address that x + i points to is not the base address (pointed to by x) incremented by i bytes, but rather is defined to be the base address incremented by i multiplied by the size of an element that x points to. Thus, x[i] designates the i+1th element of the array.
 Furthermore, in most expression contexts (a notable exception is as operand of sizeof), the name of an array is automatically converted to a pointer to the array's first element. This implies that an array is never copied as a whole when named as an argument to a function, but rather only the address of its first element is passed. Therefore, although function calls in C use pass-by-value semantics, arrays are in effect passed by reference.
 The size of an element can be determined by applying the operator sizeof to any dereferenced element of x, as in n = sizeof *x or n = sizeof x[0], and the number of elements in a declared array A can be determined as sizeof A / sizeof A[0]. The latter only applies to array names: variables declared with subscripts (int A[20]). Due to the semantics of C, it is not possible to determine the entire size of arrays through pointers to arrays or those created by dynamic allocation (malloc); code such as sizeof arr / sizeof arr[0] (where arr designates a pointer) will not work since the compiler assumes the size of the pointer itself is being requested.[33][34] Since array name arguments to sizeof are not converted to pointers, they do not exhibit such ambiguity. However, arrays created by dynamic allocation are accessed by pointers rather than true array variables, so they suffer from the same sizeof issues as array pointers.
@@ -326,7 +326,7 @@ Jump up ^ The original example code will compile on most modern compilers that a
 Jump up ^ The main function actually has two arguments, int argc and char *argv[], respectively, which can be used to handle command line arguments. The ISO C standard (section 5.1.2.2.1) requires both forms of main to be supported, which is special treatment not afforded to any other function.
 References
 ^ Jump up to: a b c d e Kernighan, Brian W.; Ritchie, Dennis M. (February 1978). The C Programming Language (1st ed.). Englewood Cliffs, NJ: Prentice Hall. ISBN 0-13-110163-3. Regarded by many to be the authoritative reference on C.
-Jump up ^ Ritchie (1993): "Thompson had made a brief attempt to produce a system coded in an early version of C—before structures—in 1972, but gave up the effort."
+Jump up ^ Ritchie (1993): "Thompson had made a brief attempt to produce a system coded in an early version of Cbefore structuresin 1972, but gave up the effort."
 Jump up ^ Ritchie (1993): "The scheme of type composition adopted by C owes considerable debt to Algol 68, although it did not, perhaps, emerge in a form that Algol's adherents would approve of."
 Jump up ^ Ring Team (5 December 2017). "Ring language and other languages". ring-lang.net. ring-lang.
 ^ Jump up to: a b "Verilog HDL (and C)" (PDF). The Research School of Computer Science at the Australian National University. 2010-06-03. Retrieved 2013-08-19. 1980s: ; Verilog first introduced ; Verilog inspired by the C programming language
@@ -334,14 +334,14 @@ Jump up ^ Ritchie (1993)
 Jump up ^ Lawlis, Patricia K. (August 1997). "Guidelines for Choosing a Computer Language: Support for the Visionary Organization". Ada Information Clearinghouse. Retrieved 18 July 2006.
 Jump up ^ "Programming Language Popularity". 2009. Archived from the original on 13 December 2007. Retrieved 16 January 2009.
 Jump up ^ "TIOBE Programming Community Index". 2009. Retrieved 6 May 2009.
-Jump up ^ Ritchie, Dennis M. (March 1993). "The Development of the C Language". ACM SIGPLAN Notices. 28 (3): 201–208. doi:10.1145/155360.155580.
-Jump up ^ Ulf Bilting & Jan Skansholm "Vägen till C" (Swedish) meaning "The Road to C", third edition, Studentlitteratur, year 2000, page 3. ISBN 91-44-01468-6.
-^ Jump up to: a b c Johnson, S. C.; Ritchie, D. M. (1978). "Portability of C Programs and the UNIX System". Bell System Tech. J. 57 (6): 2021–2048. doi:10.1002/j.1538-7305.1978.tb02141.x. Retrieved 16 December 2012. (Note: this reference is an OCR scan of the original, and contains an OCR glitch rendering "IBM 370" as "IBM 310".)
-Jump up ^ McIlroy, M. D. (1987). A Research Unix reader: annotated excerpts from the Programmer's Manual, 1971–1986 (PDF) (Technical report). CSTR. Bell Labs. p. 10. 139.
+Jump up ^ Ritchie, Dennis M. (March 1993). "The Development of the C Language". ACM SIGPLAN Notices. 28 (3): 201208. doi:10.1145/155360.155580.
+Jump up ^ Ulf Bilting & Jan Skansholm "Vgen till C" (Swedish) meaning "The Road to C", third edition, Studentlitteratur, year 2000, page 3. ISBN 91-44-01468-6.
+^ Jump up to: a b c Johnson, S. C.; Ritchie, D. M. (1978). "Portability of C Programs and the UNIX System". Bell System Tech. J. 57 (6): 20212048. doi:10.1002/j.1538-7305.1978.tb02141.x. Retrieved 16 December 2012. (Note: this reference is an OCR scan of the original, and contains an OCR glitch rendering "IBM 370" as "IBM 310".)
+Jump up ^ McIlroy, M. D. (1987). A Research Unix reader: annotated excerpts from the Programmer's Manual, 19711986 (PDF) (Technical report). CSTR. Bell Labs. p. 10. 139.
 Jump up ^ Stallings, William. "Operating Systems: Internals and Design Principles" 5th ed, page 91. Pearson Education, Inc. 2005.
 ^ Jump up to: a b Kernighan, Brian W.; Ritchie, Dennis M. (March 1988). The C Programming Language (2nd ed.). Englewood Cliffs, NJ: Prentice Hall. ISBN 0-13-110362-8.
 Jump up ^ Stroustrup, Bjarne (2002). Sibling rivalry: C and C++ (PDF) (Report). AT&T Labs.
-Jump up ^ "JTC1/SC22/WG14 – C". Home page. ISO/IEC. Retrieved 2 June 2011.
+Jump up ^ "JTC1/SC22/WG14  C". Home page. ISO/IEC. Retrieved 2 June 2011.
 Jump up ^ Andrew Binstock (October 12, 2011). "Interview with Herb Sutter". Dr. Dobbs. Retrieved September 7, 2013.
 Jump up ^ "TR 18037: Embedded C" (PDF). ISO / IEC. Retrieved 26 July 2011.
 Jump up ^ Harbison, Samuel P.; Steele, Guy L. (2002). C: A Reference Manual (5th ed.). Englewood Cliffs, NJ: Prentice Hall. ISBN 0-13-089592-X. Contains a BNF grammar for C.
@@ -353,7 +353,7 @@ Jump up ^ "10 Common Programming Mistakes in C++". Cs.ucr.edu. Retrieved 26 June
 Jump up ^ Schultz, Thomas (2004). C and the 8051 (3rd ed.). Otsego, MI: PageFree Publishing Inc. p. 20. ISBN 1-58961-237-X. Retrieved 10 February 2012.
 Jump up ^ Page 6 of the original K&R[1]
 ^ Jump up to: a b c d e f g Klemens, Ben (2013). 21st Century C. O'Reilly Media. ISBN 1-4493-2714-1.
-Jump up ^ Feuer, Alan R.; Gehani, Narain H. (March 1982). "Comparison of the Programming Languages C and Pascal". ACM Computing Surveys. 14 (1): 73–92. doi:10.1145/356869.356872. (Subscription required (help)).
+Jump up ^ Feuer, Alan R.; Gehani, Narain H. (March 1982). "Comparison of the Programming Languages C and Pascal". ACM Computing Surveys. 14 (1): 7392. doi:10.1145/356869.356872. (Subscription required (help)).
 Jump up ^ Page 122 of K&R2[15]
 Jump up ^ For example, gcc provides _FORTIFY_SOURCE. "Security Features: Compile Time Buffer Checks (FORTIFY_SOURCE)". fedoraproject.org. Retrieved 2012-08-05.
 Jump up ^ Raymond, Eric S. (11 October 1996). The New Hacker's Dictionary (3rd ed.). MIT Press. p. 432. ISBN 978-0-262-68092-9. Retrieved 5 August 2012.
@@ -362,13 +362,13 @@ Jump up ^ Summit, Steve. "comp.lang.c Frequently Asked Questions 7.28". Retrieve
 Jump up ^ "Man Page for lint (freebsd Section 1)". unix.com. 2001-05-24. Retrieved 2014-07-15.
 Jump up ^ McMillan, Robert (2013-08-01). "Is Java Losing Its Mojo?". Wired.
 Jump up ^ Chip., Weems, (2014). Programming and problem solving with C++ : brief, sixth edition. Jones & Bartlett Learning. ISBN 1449694284. OCLC 894992484.
-Jump up ^ Dr. Dobb's Sourcebook. U.S.A.: Miller Freeman, Inc. November–December 1995.
+Jump up ^ Dr. Dobb's Sourcebook. U.S.A.: Miller Freeman, Inc. NovemberDecember 1995.
 Jump up ^ "Using C for CGI Programming". linuxjournal.com. 1 March 2005. Retrieved 4 January 2010.
 Jump up ^ Gerard),, O'Regan, Gerard (Cornelius. Pillars of computing : a compendium of select, pivotal technology firms. ISBN 3319214640. OCLC 922324121.
 Jump up ^ Lawrence., Rauchwerger, (2004). Languages and compilers for parallel computing : 16th international workshop, LCPC 2003, College Station, TX, USA, October 2-4, 2003 : revised papers. Springer. ISBN 3540246444. OCLC 57965544.
-Jump up ^ Stroustrup, Bjarne (1993). "A History of C++: 1979−1991" (PDF). Retrieved 9 June 2011.
+Jump up ^ Stroustrup, Bjarne (1993). "A History of C++: 19791991" (PDF). Retrieved 9 June 2011.
 Sources
-Ritchie, Dennis M. (1993). The Development of the C Language. The second ACM SIGPLAN History of Programming Languages Conference (HOPL-II). Cambridge, MA, USA — April 20–23, 1993: ACM. pp. 201–208. doi:10.1145/154766.155580. ISBN 0-89791-570-4. Retrieved 2014-11-04.
+Ritchie, Dennis M. (1993). The Development of the C Language. The second ACM SIGPLAN History of Programming Languages Conference (HOPL-II). Cambridge, MA, USA  April 2023, 1993: ACM. pp. 201208. doi:10.1145/154766.155580. ISBN 0-89791-570-4. Retrieved 2014-11-04.
 Further reading
 Banahan, M.; Brady, D.; Doran, M. (1991). The C Book (2nd ed.). Addison-Wesley.
 King, K. N. (April 2008). C Programming: A Modern Approach (2nd ed.). Norton. ISBN 978-0-393-97950-3.
@@ -391,30 +391,30 @@ A History of C, by Dennis Richie
 [hide] v t e
 C programming language
 ANSI C C89 and C90 C99 C11 Embedded C MISRA C
-Features	
+Features
 Functions Header files Libraries Operators String Syntax Preprocessor Data types
 Standard library
-functions	
+functions
 Char (ctype.h) File I/O (stdio.h) Math (math.h) Dynamic memory (stdlib.h) String (string.h) Time (time.h) Variadic (stdarg.h) POSIX
 Standard
-libraries	
+libraries
 Bionic libhybris dietlibc EGLIBC glibc klibc Microsoft Run-time Library musl Newlib uClibc BSD libc
-Compilers	
+Compilers
 Comparison of compilers ACK Borland Turbo C Clang GCC ICC LCC Pelles C PCC SDCC TCC Microsoft Visual Studio / Express / C++ Watcom C/C++
-IDEs	
+IDEs
 Comparison of IDEs Anjuta Code::Blocks CodeLite Eclipse Geany Microsoft Visual Studio NetBeans
 Comparison with
-other languages	
+other languages
 Compatibility of C and C++ Comparison with Embedded C Comparison with Pascal Comparison of programming languages
 Descendant
-languages	
+languages
 C++ C# D Objective-C Alef Limbo Go Vala
 Category Category
 [show] v t e
 Integrated development environments
 [show] v t e
 Programming languages
-Authority control	
+Authority control
 LCCN: sh85018532 GND: 4113195-2 SUDOC: 027672441 BNF: cb119665180 (data)
 Categories: American inventionsC (programming language)C programming language familyCross-platform softwareLow-level programming languagesProcedural programming languagesProgramming languages created in 1972Programming languages with an ISO standardStatically typed programming languagesSystems programming languages
 Navigation menu
