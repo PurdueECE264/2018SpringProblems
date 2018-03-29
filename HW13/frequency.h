@@ -23,7 +23,6 @@ void SortFrequency(CharFreq * freq);
 
 
 // Single Printing function
-void PrintSingleChar(CharFreq charfreq);
-
+void PrintSingleCharFreq(CharFreq charfreq);
 
 #endif
