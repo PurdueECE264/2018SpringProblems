@@ -131,7 +131,7 @@ To test your code. You have to first compile it and then run one of the followin
 
 Type the following command to zip your file.
 ```bash
-	zip pa12.zip pe12.c main.c Makefile
+	zip pa12.zip pa12.c main.c Makefile
 ```
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
