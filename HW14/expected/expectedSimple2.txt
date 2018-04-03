@@ -1,0 +1,18 @@
+Char: #, Freq: 12
+Char: #, Freq: 5
+Char: #, Freq: 2
+Char: h, Freq: 1
+Char: r, Freq: 1
+Char: l, Freq: 3
+Char: #, Freq: 7
+Char: #, Freq: 3
+Char: w, Freq: 1
+Char: o, Freq: 2
+Char: #, Freq: 4
+Char: #, Freq: 2
+Char: 
+, Freq: 1
+Char:  , Freq: 1
+Char: #, Freq: 2
+Char: d, Freq: 1
+Char: e, Freq: 1
