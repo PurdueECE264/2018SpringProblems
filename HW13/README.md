@@ -15,13 +15,12 @@ You will learn to
 
 
 # Functions you need to complete
-In this exercise, you have to complete six functions - `CountFrequency()`, `SortFrequency()`, `PrintFreq()` `frequency.c`; `CharFreq` structure in `frequency.h` file; and `main()` in `pe13.c`.
+In this exercise, you have to complete six functions - `CountFrequency()`, `SortFrequency()`, `PrintFreq()` `frequency.c`; and `main()` in `pe13.c`.
 **Do not hardcode the name of the files in your code**
 1. `CountFrequency()` - Counts the frequencies of the characters except newline character i.e. '\n' from input file and stores in the frequency array
 2. `SortFrequency()` - Sort function for sorting frequencies. Sort the frequencies in the ascending order.
 if frequencies are same then the character with lower ascii value should be first.
 3. `PrintFreq()` - This should print all the characters and their respective frequencies in the sorted order as mentioned in `SortFrequency()` description.
-4. `CharFreq` -  this is the data structure that you need to define in frequency.h file. **This should be the first thing that you should complete**
 5. `main()` - In this exercise, you will learn to use `argc` and `argv`. Here are the specifications.
 	1. argc: If argc is not 2, you should return `EXIT_FAILURE` and print "Wrong arguments\n".
 	2. argv[1]: name of the input file. eg. test1.txt
@@ -43,14 +42,14 @@ Following are the files we provide:
 	2. `expectedSimple2.txt` - ./pe13 test/simple2.txt > expected/expectedSimple2.txt
 	3. `expectedTest1.txt` - ./pe13 test/test1.txt > expected/expectedTest1.txt
 	4. `expectedTest2.txt` - ./pe13 test/test2.txt > expected/expectedTest2.txt
-  5. `expectedWiki1.txt` - ./pe13 test/test3.txt > expected/expectedWiki1.txt
-  6. `expectedWiki2.txt` - ./pe13 test/test1.txt > expected/expectedWiki2.txt
-  7. `expectedWiki3.txt` - ./pe13 test/test1.txt > expected/expectedWiki3.txt
-  8. `valgrind.log` - valgrind --tool=memcheck --verbose --log-file=valgrind.log ./pe13 test/wiki1.txt > /dev/null
+    5. `expectedWiki1.txt` - ./pe13 test/wiki1.txt > expected/expectedWiki1.txt
+    6. `expectedWiki2.txt` - ./pe13 test/wiki2.txt > expected/expectedWiki2.txt
+    7. `expectedWiki3.txt` - ./pe13 test/wiki3.txt > expected/expectedWiki3.txt
+    8. `valgrind.log` - valgrind --tool=memcheck --verbose --log-file=valgrind.log ./pe13 test/wiki1.txt > /dev/null
 
 
 # Checking for memory errors
-You should also run./pa13 with arguments under valgrind. To do that, you have to use, for example, the following command:
+You should also run ./pe13 with arguments under valgrind. To do that, you have to use, for example, the following command:
 ```
 valgrind --tool=memcheck --verbose --log-file=valgrind.log ./pe13 test/wiki1.txt > /dev/null
 ```
@@ -64,12 +63,11 @@ Note that you should use other input arguments to extensively test your function
 You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
 * `pe13.c` - This file should have `main()` function completed.
 * `frequency.c` - This file should have `CountFrequency()`, `SortFrequency()` and `PrintFreq()` functions completed.
-* `frequency.h` - This file should have `CharFreq` structure completed.
 
 The command to create zip file is as follows:
 ```
 
-zip HW13.zip pe13.c frequency.c frequency.h
+zip HW13.zip pe13.c frequency.c 
 
 ```
 <strong>You will not get any credits if the submitted file is not zipped</strong>
