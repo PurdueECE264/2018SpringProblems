@@ -12,7 +12,7 @@ In this assignment you will be implementing Huffman encoding which requires you 
 You will learn to
 * Create Huffman tree
 * Work with binary trees
-* Prefix traversal of binary tree
+* Prefix/Preorder traversal of binary tree
 * Work with linked list
 
 
@@ -25,7 +25,7 @@ In this exercise, you have to complete six functions - `CountFrequency`, `SortFr
 if frequencies are same then the character with lower ascii value should be first.
 3. `TreeNodeCreate` -  This function creates a tree node from the input and returns the TreeNode \*.
 4. `TreeMerge` - This function merges two TreeNode\*s by creating a new TreeNode\*. It uses HUFF\_ELEM(defined in `tree.h`, if you do understand this please see Huffman encoding algorithm) as `data` value for new TreeNode and sum of the frequencies of two TreeNode\*s becomes the value of frequency variable of the new TreeNode\*.
-5. `PrefixTreePrint` - This should print all the characters and their respective frequencies in prefix order. Use `PrintSingleHelper` to print the values in prefix order.
+5. `PrefixTreePrint` - This should print all the characters and their respective frequencies in pre-order . Use `PrintSingleHelper` to print the values of single tree node.
 6. `CleanTree` -  This function cleans up the memory allocated for the tree
 7. `ListNodeCreate` - This function creates a list node from the input and returns the ListNode \*
 8. `ListBuild` - This function builds the linked list in sorted order of frequencies, sorting order followed same as in `SortFrequency` function. Input to this function is array of CharFreq.

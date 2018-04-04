@@ -29,9 +29,9 @@ TreeNode * TreeMerge(TreeNode * treeNode1, TreeNode * treeNode2){
 
 
 #ifndef TREE_PREFIX_PRINT
-// Prefix Tree Print
+// Prefix/Preorder Tree Print
 void PrefixTreePrint(TreeNode *treeNode, int level){
-  	// Print the tree in Prefix order
+  	// Print the tree in Pre-order
 	// use PrintSingleHelper function to print the values
 	return;
 }
