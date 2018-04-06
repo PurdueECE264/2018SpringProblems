@@ -30,6 +30,7 @@ TreeNode * TreeMerge(TreeNode * treeNode1, TreeNode * treeNode2){
 
 #ifndef TREE_PREFIX_PRINT
 // Prefix/Preorder Tree Print
+// Do not worry about level for this assignment, keep it any value. 
 void PrefixTreePrint(TreeNode *treeNode, int level){
   	// Print the tree in Pre-order
 	// use PrintSingleHelper function to print the values

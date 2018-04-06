@@ -30,7 +30,6 @@ void CleanList(ListNode *head);
 
 // building huffman tree
 ListNode * BuildHuffmanTree(ListNode *head);
-
 // void PrintListBuild(ListNode *head);
 
 #endif
