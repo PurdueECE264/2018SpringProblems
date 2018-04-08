@@ -1,9 +1,8 @@
 #include "frequency.h"
 
-// Step 1. - Create/ Define data structre in frequency.h such that it can hold character of 256 bytes
-// Step 2. - Complete function in frequency.c file
-// Step 3. - Complete main function
-// Step 4. - Test all the test cases 
+// Step 1. - Complete function in frequency.c file
+// Step 2. - Complete main function
+// Step 3. - Test all the test cases 
 
 
 int main(int argc, char **argv){
