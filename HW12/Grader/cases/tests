@@ -1,0 +1,29 @@
+./pa12 -J 10 5 1 > case1
+./pa12 -J 20 2 2 > case2
+./pa12 -J 40 10 3 > case3
+./pa12 -J 60 30 3 > case4
+
+
+./pa12 -J2 10 3 5 > case5
+./pa12 -J2 10 4 3 > case6
+./pa12 -J2 10 6 7 > case7
+=========================
+testINIT
+gcc -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c testINT.o -o pa12
+
+
+testPRINT
+gcc -DINIT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c testPRINT.o -o pa12
+
+testJOSP
+gcc -DINIT -DPRINT -DINITII -DPRINTII -DJOSPII main.c pa12.c testJOSP.o -o pa12
+
+testINITII
+gcc -DINIT -DPRINT -DJOSPI -DPRINTII -DJOSPII main.c pa12.c testINITII.o -o pa12
+
+testPRINTII
+gcc -DINIT -DPRINT -DJOSPI -DINITII -DJOSPII main.c pa12.c testPRINTII.o -o pa12
+
+testJOSPII
+gcc -DINIT -DPRINT -DJOSPI -DINITII -DPRINTII main.c pa12.c testJOSPII.o -o pa12
+
