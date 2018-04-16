@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+#define NUM_BITS 8
 
 typedef struct TreeNode {
   unsigned char data;

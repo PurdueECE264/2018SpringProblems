@@ -15,7 +15,7 @@ You will learn to
 
 # Description of Assignment
 This assignment requires you to do the following :
-1. Creating binary search tree by calling the function CreateBinarySearchTree.
+1. Creating binary search tree by calling the function CreateBinarySearchTree. This function takes two inputs, random seed and number of nodes. It creates BST, by randomly choosing ascii values. 
 2. Creating a binary representation of the tree. For this part, we will consider that if the tree node is not a leaf node (i.e. have left child or right child) then the binary representation of that node is 0, otherwise the binary representation of the node is binary value of the data it stores. See the example below for better understanding
 
 ## Example for this assignment
@@ -39,12 +39,12 @@ you can think of it as ![Binary representation](images/printTree.png)
 
 
 # Functions you need to complete
-In this exercise, you have to complete six functions - `CreateBinaryFromTree`, `WriteInOrderBinary`,`CleanTree`, `Int2Bin` in `tree.c`; and `main()` in `pa15.c`.
+In this exercise, you have to complete six functions - `CreateBinaryFromTree`, `WritePreOrderBinary`,`CleanTree`, `UnSig2Bin` in `tree.c`; and `main()` in `pa15.c`.
 **Do not hardcode the name of the files in your code**
-1. `CreateBinaryFromTree` -  This function creates binary representation of input tree by opening the binary file and calling WritePreOrderBinary func. The output shoud be saved in a binary file. 
+1. `CreateBinaryFromTree` -  This function creates binary representation of input tree by opening the file in binary format and calling WritePreOrderBinary func. The output shoud be saved in a binary file. 
 2. `WritePreOrderBinary` - takes input as TreeNode \* and creates binary of the tree as specified in the example. Traversing **pre-order**.
 3. `CleanTree` -  This function cleans up the memory allocated for the tree
-4. `Int2Bin` - This function creates binary from the unsigned char
+4. `UnSig2Bin` - This function creates binary from the unsigned char and returns binary value of as strings of the given input. Lenght of this string should be NUM\_BITS, as defined in `tree.h`.
 5. `main()` - In this assignment, your main function has the following the specifications.
   1. if the arguments != 4 then print "Wrong arguments\n" and return
   2. 1st input is long value using random seed needed for the generating the binary search tree
@@ -54,6 +54,29 @@ In this exercise, you have to complete six functions - `CreateBinaryFromTree`, `
   6. If tree is not generated and you get NULL from it, then print "Binary Create Failed \n" and return EXIT_FAILURE
   7. 3rd input is output filename, in which output needs to be printed
   8. if file read fails, free memory and return EXIT_FAILURE
+
+**CreateBinaryFromTree and WritePreOrderBinary together creates the binary representation of the tree. You can use any helper function that you want, if you use helper function, please put them within your #ifndef WRITE\_BINARY definition.**
+
+P.S. :  You can check your expected binary files by using the following command :
+
+```
+	xxd -b <yourfilename>
+```
+
+example, if we run the command on `expected1.bin` file, we get:
+
+```
+0000000: 00010000 00110100 11001101 00111101 01011000 00001011  .4.=X.
+0000006: 10100011 00101000 01110001 10011111 10100000           .(q..
+```
+
+The way to read this is: you can ignore the parts `0000000:` and `0000006: `; also ignore `.4.=X.` and `.(q..`. Thus, the binary bits in the file are :
+
+```
+00010000 00110100 11001101 00111101 01011000 00001011 10100011 00101000 01110001 10011111 10100000 
+
+```
+ 
 
 ### Function already given to you :
 **DO NOT modify this function**
