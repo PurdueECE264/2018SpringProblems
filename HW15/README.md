@@ -37,6 +37,18 @@ which is (Please mind that there are no spaces, they are just there to make it e
 ```
 you can think of it as ![Binary representation](images/printTree.png)
 
+In this Homework you cannot directly write characters to the file. You would have to pack the bits. For eg. If you use the following code:
+
+```
+	FILE * outputFilePtr = fopen(“somefile”,”wb”);
+	char not_leaf_node = 0;
+	fwrite(&not_leaf_node, sizeof(char),1,outputFilePtr);
+```
+
+then it writes 00000000 i.e. 8 zeros to the outputFile and not a single bit 0. 
+
+Thus, you would have to have to pack 8 bits before writing it to the file.  Thus for the given example above, if we want to write `0 0 100110110 0 101011100 …….`  to the file. Then the first character will have bit value = `00100110`, which should get printed to the file.
+
 
 # Functions you need to complete
 In this exercise, you have to complete six functions - `CreateBinaryFromTree`, `WritePreOrderBinary`,`CleanTree`, `UnSig2Bin` in `tree.c`; and `main()` in `pa15.c`.
