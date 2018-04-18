@@ -77,15 +77,18 @@ P.S. :  You can check your expected binary files by using the following command 
 
 example, if we run the command on `expected1.bin` file, we get:
 
-```
-0000000: 00010000 00110100 11001101 00111101 01011000 00001011  .4.=X.
-0000006: 10100011 00101000 01110001 10011111 10100000           .(q..
-```
-
-The way to read this is: you can ignore the parts `0000000:` and `0000006: `; also ignore `.4.=X.` and `.(q..`. Thus, the binary bits in the file are :
 
 ```
-00010000 00110100 11001101 00111101 01011000 00001011 10100011 00101000 01110001 10011111 10100000 
+0000000: 00010001 00110100 10101001 01000000 01010111 01001011  .4.@WK
+0000006: 10100011 01001100 01110110 10011111 01000000           .Lv.@
+
+```
+
+
+The way to read this is: you can ignore the parts `0000000:` and `0000006: `; also ignore `.4.@WK` and `.Lv.@`. Thus, the binary bits in the file are :
+
+```
+00010001 00110100 10101001 01000000 01010111 01001011 10100011 01001100 01110110 10011111 01000000 
 
 ```
  
