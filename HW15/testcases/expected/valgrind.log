@@ -1,0 +1,72 @@
+==21965== Memcheck, a memory error detector
+==21965== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==21965== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==21965== Command: ./pa15 23 50 expected/expected7.bin
+==21965== Parent PID: 21951
+==21965== 
+--21965-- 
+--21965-- Valgrind options:
+--21965--    --tool=memcheck
+--21965--    --verbose
+--21965--    --leak-check=full
+--21965--    --log-file=expected/valgrind.log
+--21965-- Contents of /proc/version:
+--21965--   Linux version 2.6.32-696.23.1.el6.x86_64 (mockbuild@x86-027.build.eng.bos.redhat.com) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-18) (GCC) ) #1 SMP Sat Feb 10 11:10:31 EST 2018
+--21965-- Arch and hwcaps: AMD64, amd64-sse3-cx16
+--21965-- Page sizes: currently 4096, max supported 4096
+--21965-- Valgrind library directory: /usr/lib64/valgrind
+--21965-- Reading syms from /home/min/a/chawla9/2018Spring/AssignmentSolution/2018Spring/HW15/pa15
+--21965-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
+--21965--    object doesn't have a dynamic symbol table
+--21965-- Reading syms from /lib64/ld-2.12.so
+--21965--   Considering /usr/lib/debug/.build-id/1c/c2165e019d43f71fde0a47af9f4c8eb5e51963.debug ..
+--21965--   .. build-id is valid
+--21965-- Scheduler: using generic scheduler lock implementation.
+--21965-- Reading suppressions file: /usr/lib64/valgrind/default.supp
+==21965== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-21965-by-chawla9-on-ecegrid-thin1.ecn.purdue.edu
+==21965== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-21965-by-chawla9-on-ecegrid-thin1.ecn.purdue.edu
+==21965== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-21965-by-chawla9-on-ecegrid-thin1.ecn.purdue.edu
+==21965== 
+==21965== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==21965== don't want to do, unless you know exactly what you're doing,
+==21965== or are doing some strange experiment):
+==21965==   /usr/lib64/valgrind/../../bin/vgdb --pid=21965 ...command...
+==21965== 
+==21965== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==21965==   /path/to/gdb ./pa15
+==21965== and then give GDB the following command
+==21965==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=21965
+==21965== --pid is optional if only one valgrind process is running
+==21965== 
+--21965-- REDIR: 0x30fe417f90 (strlen) redirected to 0x38049551 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--21965-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--21965-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+--21965-- REDIR: 0x30fe417da0 (index) redirected to 0x4a07c30 (index)
+--21965-- REDIR: 0x30fe417e20 (strcmp) redirected to 0x4a08570 (strcmp)
+--21965-- Reading syms from /lib64/libc-2.12.so
+--21965--   Considering /usr/lib/debug/.build-id/8a/7e7404a2335231be759cb54f8041344cac0c1b.debug ..
+--21965--   .. build-id is valid
+--21965-- REDIR: 0x30fe884d10 (strcasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--21965-- REDIR: 0x30fe886fd0 (strncasecmp) redirected to 0x480155c (_vgnU_ifunc_wrapper)
+--21965-- REDIR: 0x30fe882c80 (__GI_strrchr) redirected to 0x4a07ab0 (__GI_strrchr)
+--21965-- REDIR: 0x30fe87aa50 (malloc) redirected to 0x4a069ac (malloc)
+--21965-- REDIR: 0x30fe884540 (mempcpy) redirected to 0x4a0a020 (mempcpy)
+--21965-- REDIR: 0x30fe8896b0 (memcpy) redirected to 0x4a08b60 (memcpy)
+--21965-- REDIR: 0x30fe87b8b0 (free) redirected to 0x4a063a9 (free)
+--21965-- REDIR: 0x30fe8811a0 (__GI_strlen) redirected to 0x4a07fb0 (__GI_strlen)
+--21965-- REDIR: 0x30fe88ab30 (strchrnul) redirected to 0x4a09fb0 (strchrnul)
+--21965-- REDIR: 0x30fe881280 (strnlen) redirected to 0x4a07f30 (strnlen)
+--21965-- REDIR: 0xffffffffff600000 (???) redirected to 0x38049533 (vgPlain_amd64_linux_REDIR_FOR_vgettimeofday)
+==21965== 
+==21965== HEAP SUMMARY:
+==21965==     in use at exit: 0 bytes in 0 blocks
+==21965==   total heap usage: 72 allocs, 72 frees, 2,557 bytes allocated
+==21965== 
+==21965== All heap blocks were freed -- no leaks are possible
+==21965== 
+==21965== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+--21965-- 
+--21965-- used_suppression:      4 U1004-ARM-_dl_relocate_object
+--21965-- used_suppression:      4 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==21965== 
+==21965== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
