@@ -1,0 +1,6 @@
+### Test Cases for HW15
+
+This contains Makefile with each test case specified what it is testing.
+
+We have tested your code both with running the bare code that you have submitted and also by grading just one function at a time. 
+And then we have taken maximum score amongst them. If you have confusion with grading, you can contact the teaching staff.
