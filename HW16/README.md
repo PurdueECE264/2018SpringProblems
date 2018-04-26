@@ -84,8 +84,8 @@ In this exercise, you have to complete six functions - `BMP_Open`, `Is_BMPHeader
 ---------------------
 # Testing your code
 Following are the files we provide:
-1. `pa15.c` - main file for this assignment.
-2. `pa15.h` - Header file of the main file .
+1. `pa16.c` - main file for this assignment.
+2. `pa16.h` - Header file of the main file .
 4. `bmpimage.h` - Header file, which has definition for the functions and structures you need in this assignment. Do not modify this file.
 5. `bmpimage.c` - These contains the functions related to working with BMP images.
 6. `bmpfunc.h` - Header file, which has definition for the functions you need in this assignment. Do not modify this file.
@@ -98,7 +98,7 @@ Following are the files we provide:
 
 
 # Checking for memory errors
-You should also run ./pa15 with arguments under valgrind. To do that, you have to use, for example, the following command:
+You should also run ./pa16 with arguments under valgrind. To do that, you have to use, for example, the following command:
 ```
 valgrind --tool=memcheck --verbose --leak-check=full --log-file=valgrind.log ./pa16 exampleImages/RV2.bmp expectedImages/expectedRV2.bmp 3 2
 ```
